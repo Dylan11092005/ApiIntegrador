@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const path = require('path');
-const swagger = require('../src/consts/swagger');
+// const swagger = require('../src/consts/swagger');
 require("dotenv").config();
 const publicRoutes = require('../routes/publicRoutes.route');
 const authMiddleware = require('../middleware/authMiddleware');
@@ -29,11 +29,11 @@ class servidor {
     authMiddleware,
     express.static(path.join(__dirname, "../uploads/firmas"))
     );
-    this.app.use(
-      "/api/documentacion",
-      swagger.serve,
-      swagger.setup
-    );
+    // this.app.use(
+    //   "/api/documentacion",
+    //   swagger.serve,
+    //   swagger.setup
+    // );
     this.app.get("/", bienvenida);
     this.app.get("/api", bienvenida);
   }
