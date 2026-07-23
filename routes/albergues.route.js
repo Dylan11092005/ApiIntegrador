@@ -637,7 +637,7 @@ router.get('/consulta/porUsuario/:idUsuario', albergueController.getAllAlbergues
  *                   example: false
  *                 message:
  *                   type: string
- *                   example: Error al actualizar albergue familia: Detalle del error
+ *                   example: "Error al actualizar albergue familia: Detalle del error"
  */
 
 

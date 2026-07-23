@@ -10,6 +10,7 @@
     "mysql2": "^3.14.1",
     "node-cron": "^4.2.1",
     "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-dist": "^5.32.11",
     "swagger-ui-express": "^5.0.1"
   },
   "name": "practicafinal",
